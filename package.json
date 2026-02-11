@@ -7,15 +7,18 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-icons-kit": "^1.2.1",
-    "react-scripts": "2.1.5",
-    "slate": "^0.44.10",
-    "slate-react": "^0.21.16"
+    "react-scripts": "5.0.0",
+    "slate": "^0.50.0",
+    "slate-react": "^0.50.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -25,5 +28,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
